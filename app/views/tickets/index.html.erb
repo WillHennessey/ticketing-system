@@ -1,0 +1,28 @@
+<h1>Listing tickets</h1>
+
+<table>
+  <thead>
+  <tr>
+    <th>Type</th>
+    <th>Priority</th>
+    <th>Due at</th>
+    <th>Description</th>
+    <th colspan="2">Actions</th>
+  </tr>
+  </thead>
+
+  <% @tickets.each do |ticket| %>
+      <tr>
+        <td><%= ticket.type %></td>
+        <td><%= ticket.priority %></td>
+        <td><%= ticket.due_at %></td>
+        <td><%= ticket.description %></td>
+        <td><%= link_to 'Show', ticket_path(ticket) %></td>
+        <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
+      </tr>
+  <% end %>
+</table>
+
+<br>
+
+<%= link_to 'New Ticket', new_ticket_path %>
