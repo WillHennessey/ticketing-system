@@ -1,0 +1,23 @@
+$ticket-background: #f6f8fa;
+$ticket-text: #586069;
+$ticket-border: #d1d5da;
+
+#ticket-index-title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+#ticket-index-headings {
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+#ticket-index-body > .row {
+  border: 1.5px solid $ticket-border;
+  border-radius: 2px;
+  background-color: $ticket-background;
+  color: $ticket-text;
+  margin-bottom: 0.25rem;
+  padding-bottom: 0.25rem;
+  padding-top: 0.25rem;
+}

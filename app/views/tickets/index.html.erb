@@ -1,27 +1,45 @@
-<h1>Listing tickets</h1>
+<h1 id="ticket-index-title">Open Tickets</h1>
 
-<table>
-  <thead>
-  <tr>
-    <th>Type</th>
-    <th>Priority</th>
-    <th>Due at</th>
-    <th>Description</th>
-    <th colspan="2">Actions</th>
-  </tr>
-  </thead>
+<div id="ticket-index-headings" class="row">
+  <div class="col-2">
+    <h4>Type</h4>
+  </div>
+  <div class="col-2">
+    <h4>Priority</h4>
+  </div>
+  <div class="col-2">
+    <h4>Due at</h4>
+  </div>
+  <div class="col-3">
+    <h4>Description</h4>
+  </div>
+  <div class="col-3">
+    <h4>Actions</h4>
+  </div>
+</div>
 
+<div id="ticket-index-body">
   <% @tickets.each do |ticket| %>
-      <tr>
-        <td><%= ticket.type %></td>
-        <td><%= ticket.priority %></td>
-        <td><%= ticket.due_at %></td>
-        <td><%= ticket.description %></td>
-        <td><%= link_to 'Show', ticket_path(ticket) %></td>
-        <td><%= link_to 'Edit', edit_ticket_path(ticket) %></td>
-      </tr>
+      <div class="row">
+        <div class="col-2">
+          <span><%= ticket.type %></span>
+        </div>
+        <div class="col-2">
+          <span><%= ticket.priority %></span>
+        </div>
+        <div class="col-2">
+          <span><%= ticket.due_at %></span>
+        </div>
+        <div class="col-3">
+          <span><%= ticket.description %></span>
+        </div>
+        <div class="col-3">
+          <span><%= link_to 'Show', ticket_path(ticket) %></span>
+          <span><%= link_to 'Edit', edit_ticket_path(ticket) %></span>
+        </div>
+      </div>
   <% end %>
-</table>
+</div>
 
 <br>
 
