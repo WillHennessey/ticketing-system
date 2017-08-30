@@ -2,22 +2,35 @@ $ticket-background: #f6f8fa;
 $ticket-text: #586069;
 $ticket-border: #d1d5da;
 
-#ticket-index-title {
+.ticket-title {
   margin-bottom: 2rem;
   text-align: center;
 }
 
-#ticket-index-headings {
+.ticket-header {
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+  background-color: $ticket-background;
+  border-radius: 0.3rem;
+}
+
+#ticket-index-headers {
   margin-bottom: 1rem;
   font-weight: bold;
 }
 
 #ticket-index-body > .row {
-  border: 1.5px solid $ticket-border;
-  border-radius: 2px;
+  border: 0.15rem solid $ticket-border;
+  border-radius: 0.3rem;
   background-color: $ticket-background;
   color: $ticket-text;
   margin-bottom: 0.25rem;
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
+}
+
+.sidebar {
+  border: 0.15rem solid $ticket-border;
+  border-radius: 0.3rem;
+  padding: 0.25rem;
 }
