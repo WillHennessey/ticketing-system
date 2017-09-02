@@ -2,7 +2,7 @@
 
 To test just run:
 * `bundle install`
-* `rake db:migrate`
+* `rails db:migrate db:fixtures:load`
 * `rails server`
 
 You can create tickets in the console like this:
