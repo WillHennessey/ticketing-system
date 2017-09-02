@@ -1,5 +1,17 @@
-<h1>Ticket <%= @ticket.id%></h1>
-<h3><%= @ticket.abstract %></h3>
-<p>
-  <%= @ticket.details %>
-</p>
+<div class="row ticket-header">
+  <div class="col">
+    <h1 class="ticket-title">Ticket #<%= @ticket.id %></h1>
+    <hr class="my-4">
+  </div>
+</div>
+<div class="row">
+  <div class="col-8">
+
+  </div>
+  <div class="col-4">
+    <div class="sidebar">
+      <h3>Controls</h3>
+      <p>Test test test</p>
+    </div>
+  </div>
+</div>

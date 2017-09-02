@@ -1,0 +1,23 @@
+ticket_1:
+  priority: 1
+  type: Defect
+  abstract: Test defect ticket for a big nasty bug
+  details: This is a test defect ticket, it is used for tracking/reporting defects to the dev team
+  created_at: <%= 1.hour.ago %>
+  updated_at: <%= 30.minutes.ago%>
+
+ticket_2:
+  priority: 2
+  type: Story
+  abstract: Test story ticket for a really important story
+  details: This is a test story ticket, it is used for tracking/reporting big pieces of work
+  created_at: <%= 3.hours.ago %>
+  updated_at: <%= 45.minutes.ago%>
+
+ticket_3:
+  priority: 3
+  type: Issue
+  abstract: Test issue ticket for a very big issue
+  details: This is a test issue ticket, it is used for tracking/reporting very big issues
+  created_at: <%= 4.hours.ago %>
+  updated_at: <%= 55.minutes.ago%>

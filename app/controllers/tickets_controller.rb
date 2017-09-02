@@ -1,6 +1,8 @@
 class TicketsController < ApplicationController
+  before_action :set_ticket, only: [:show, :edit]
+
   def index
-    @tickets = Ticket.all
+    @tickets = Ticket.all.order(:priority)
   end
 
   def show
@@ -19,6 +21,9 @@ class TicketsController < ApplicationController
   def update
   end
 
-  def destroy
+  private
+
+  def set_ticket
+    @ticket = Ticket.find(params[:id])
   end
 end
