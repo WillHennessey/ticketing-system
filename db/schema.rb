@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 20170822205405) do
 
   create_table "tickets", force: :cascade do |t|
     t.integer "priority", default: 4, null: false
-    t.string "type", limit: 255
+    t.string "type", limit: 20
     t.string "abstract", limit: 255, null: false
     t.text "details", limit: 65535, null: false
     t.datetime "created_at", null: false

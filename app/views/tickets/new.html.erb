@@ -1,2 +1,23 @@
-<h1>TicketsController#new</h1>
-<p>Find me in app/views/tickets_controller/new.html.erb</p>
+<div class="row">
+  <div class="col-6 mx-auto">
+    <%= form_for(@ticket) do |f| %>
+      <div class="form-group">
+        <%= f.label :type %>
+        <%= f.select :type, ticket_types_for_select, {}, { class: 'form-control' } %>
+      </div>
+      <div class="form-group">
+        <%= f.label :priority %>
+        <%= f.text_field :priority, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :abstract %>
+        <%= f.text_field :abstract, class: 'form-control' %>
+      </div>
+      <div class="form-group">
+        <%= f.label :details %>
+        <%= f.text_area :details, class: 'form-control', rows: 10 %>
+      </div>
+        <%= f.submit 'Create', class: 'btn btn-primary' %>
+    <% end %>
+  </div>
+</div>

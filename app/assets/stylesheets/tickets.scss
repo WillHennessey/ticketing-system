@@ -16,6 +16,8 @@ $ticket-border: #d1d5da;
 
 #ticket-index-headers {
   margin-bottom: 1rem;
+  margin-right: inherit;
+  margin-left: inherit;
   font-weight: bold;
 }
 
@@ -25,6 +27,8 @@ $ticket-border: #d1d5da;
   background-color: $ticket-background;
   color: $ticket-text;
   margin-bottom: 0.25rem;
+  margin-right: inherit;
+  margin-left: inherit;
   padding-bottom: 0.25rem;
   padding-top: 0.25rem;
 }
