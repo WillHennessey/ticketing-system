@@ -15,7 +15,7 @@ gem 'puma', '~> 3.7'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Bootstrap 4
-gem 'bootstrap', '~> 4.0.0.beta'
+gem 'bootstrap', '~> 4.3.1'
 # Tooltips for bootstrap 4 requires tether
 source 'https://rails-assets.org' do
   gem 'rails-assets-tether', '>= 1.1.0'
